@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcveens/react-drawio.git"
+    "url": "git+https://github.com/knva/react-drawio.git"
   },
   "author": "Marc Veens",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcveens/react-drawio/issues"
+    "url": "https://github.com/knva/react-drawio/issues"
   },
-  "homepage": "https://github.com/marcveens/react-drawio#readme",
+  "homepage": "https://github.com/knva/react-drawio#readme",
   "tags": [
     "react",
     "diagram",

@@ -5,7 +5,15 @@ export const getEmbedUrl = (
   urlParameters?: UrlParameters,
   addConfiguration?: boolean
 ) => {
-  const url = new URL(baseUrl ?? 'https://embed.diagrams.net');
+  let absoluteBaseUrl: string;
+  if (baseUrl && !baseUrl.startsWith('http://') && !baseUrl.startsWith('https://')) {
+    // Treat as a relative path
+    absoluteBaseUrl = new URL(baseUrl, window.location.href).toString();
+  } else {
+    absoluteBaseUrl = baseUrl ?? 'https://embed.diagrams.net';
+  }
+
+  const url = new URL(absoluteBaseUrl);
   const urlSearchParams = new URLSearchParams();
 
   urlSearchParams.append('embed', '1');
