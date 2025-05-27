@@ -5,9 +5,9 @@ type EventHandler = {
 };
 
 export function handleEvent(event: MessageEvent, handlers: EventHandler, baseUrl?: string) {
-  if (!event.origin.includes('embed.diagrams.net') && (baseUrl && !event.origin.includes(baseUrl))) {
-    return;
-  }
+  // if (!event.origin.includes('embed.diagrams.net') && (baseUrl && !event.origin.includes(baseUrl))) {
+  //   return;
+  // }
 
   try {
     const data = JSON.parse(event.data) as EmbedEvents;
