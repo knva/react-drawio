@@ -1,5 +1,5 @@
 {
-  "name": "react-drawio",
+  "name": "@knva/react-drawio",
   "version": "1.0.5",
   "type": "module",
   "description": "React component for integrating the Diagrams (draw.io) embed iframe",
